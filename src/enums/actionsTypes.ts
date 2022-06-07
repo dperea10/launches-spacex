@@ -1,0 +1,38 @@
+export enum LAUNCHES_ACTION {
+    SEARCH_UPCOMING_LAUNCHES_START = 'SEARCH_UPCOMING_LAUNCHES_START',
+    SEARCH_UPCOMING_LAUNCHES_COMPLETE = 'SEARCH_UPCOMING_LAUNCHES_COMPLETE',
+    SEARCH_UPCOMING_LAUNCHES_ERROR = 'SEARCH_UPCOMING_LAUNCHES_ERROR',
+    
+    SEARCH_UPCOMING_LAUNCHES_BY_ID_START = 'SEARCH_UPCOMING_LAUNCHES_BY_ID_START',
+    SEARCH_UPCOMING_LAUNCHES_BY_ID_COMPLETE = 'SEARCH_UPCOMING_LAUNCHES_BY_ID_COMPLETE',
+    SEARCH_UPCOMING_LAUNCHES_BY_ID_ERROR = 'SEARCH_UPCOMING_LAUNCHES_BY_ID_ERROR',
+}
+
+// For Action Creator
+export interface markStartAction {
+	type: "SEARCH_UPCOMING_LAUNCHES_START";
+	id: string;
+}
+
+export interface markCompleteAction {
+	type: "SEARCH_UPCOMING_LAUNCHES_COMPLETE";
+	title: string;
+}
+
+export interface markErrorAction {
+	type: "SEARCH_UPCOMING_LAUNCHES_ERROR";
+}
+
+export interface markStartByIdAction {
+	type: "SEARCH_UPCOMING_LAUNCHES_START";
+	id: string;
+}
+
+export interface markCompleteByIdAction {
+	type: "SEARCH_UPCOMING_LAUNCHES_BY_ID_COMPLETE";
+	title: string;
+}
+
+export interface markErrorByIdAction {
+	type: "SEARCH_UPCOMING_LAUNCHES_BY_ID_ERROR";
+}
